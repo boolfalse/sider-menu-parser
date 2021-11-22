@@ -16,7 +16,7 @@ fs.readFile('./sider.html', 'utf8', function (err, data) {
         let categoryImg = category.querySelector('a.level-0-link img');
         let menuItem = {
             name: categoryImg.attributes.alt,
-            image: categoryImg.attributes.src,
+            image: categoryImg.attributes['data-src'],
         };
 
         let menuSubItems = [];
@@ -28,7 +28,7 @@ fs.readFile('./sider.html', 'utf8', function (err, data) {
                 let subcategoryImg = subcategory.querySelector('a.level-1-link img');
                 let menuSubItem = {
                     name: subcategoryImg.attributes.alt,
-                    image: subcategoryImg.attributes.src,
+                    image: subcategoryImg.attributes['data-src'],
                 };
 
                 let menuSubSubItems = [];
@@ -40,7 +40,7 @@ fs.readFile('./sider.html', 'utf8', function (err, data) {
                         if (subsubcategoryImg) {
                             menuSubSubItems.push({
                                 name: subsubcategoryImg.attributes.alt,
-                                image: subsubcategoryImg.attributes.src,
+                                image: subsubcategoryImg.attributes['data-src'],
                             });
                         }
                     }
