@@ -1,0 +1,19 @@
+{
+  "name": "sider-menu-parser",
+  "version": "1.0.0",
+  "description": "Sider.biz Menu parser with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sider",
+    "Node",
+    "parser"
+  ],
+  "author": "boolfalse",
+  "license": "ISC",
+  "dependencies": {
+    "node-html-parser": "^5.1.0"
+  }
+}
